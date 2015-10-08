@@ -1,0 +1,14 @@
+{
+    "name": "hissezhaut/autovista-vininternational",
+    "description": "Package generated from http://vinsearch.eurotaxglass.com/vin-intl/?wsdl using wsdltophp/packagegenerator",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Autovista\\VinInternational\\": "./src/"
+        }
+    }
+}

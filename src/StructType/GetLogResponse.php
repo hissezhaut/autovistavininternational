@@ -1,0 +1,66 @@
+<?php
+
+namespace Autovista\VinInternational\StructType;
+
+use \WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for GetLogResponse StructType
+ * @subpackage Structs
+ */
+class GetLogResponse extends AbstractStructBase
+{
+    /**
+     * The out
+     * @var string
+     */
+    public $out;
+    /**
+     * Constructor method for GetLogResponse
+     * @uses GetLogResponse::setOut()
+     * @param string $out
+     */
+    public function __construct($out = null)
+    {
+        $this
+            ->setOut($out);
+    }
+    /**
+     * Get out value
+     * @return string|null
+     */
+    public function getOut()
+    {
+        return $this->out;
+    }
+    /**
+     * Set out value
+     * @param string $out
+     * @return \Autovista\VinInternational\StructType\GetLogResponse
+     */
+    public function setOut($out = null)
+    {
+        $this->out = $out;
+        return $this;
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see AbstractStructBase::__set_state()
+     * @uses AbstractStructBase::__set_state()
+     * @param array $array the exported values
+     * @return \Autovista\VinInternational\StructType\GetLogResponse
+     */
+    public static function __set_state(array $array)
+    {
+        return parent::__set_state($array);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}
